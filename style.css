@@ -1,0 +1,107 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background-color: rgb(179, 197, 206);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+*,*::after,*::before{
+   box-sizing: inherit; 
+}
+* img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+input{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    border: solid 2px whitesmoke;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+}
+button{
+    padding: 5px;
+    color: whitesmoke;
+    background-color: rgb(179, 197, 206);
+    border-radius: 5px;
+    border: solid 2px whitesmoke;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+main{
+   width: 90%;
+}
+main header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+header .form{
+    width: 30%;
+}
+.form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-container .form-input{
+    width: 70%;
+}
+main .contents{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+main .contents .item{
+    width: 30%;
+    height: max-content;
+    border: solid 2px whitesmoke;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: all 300ms;
+    object-fit:cover;
+}
+main .item:hover{
+    transform: translateY(5px);
+}
+footer{
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+@media(max-width:800px){
+    main header{
+        flex-direction: column;
+    }
+    main header .brand,
+    main header .form{
+        width: 100%;
+    }
+    main .contents{
+        flex-direction: column;
+    }
+    main .contents .item{
+        width: 100%;
+    }
+}

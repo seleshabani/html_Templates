@@ -1,0 +1,15 @@
+body::-webkit-scrollbar{
+    display: none;
+}
+.glass-container .content{
+    overflow-x: hidden;
+}
+.glass-container .content::-webkit-scrollbar{
+    margin-top: 5px;
+    display: block;
+    background-color: var(--text-color);
+    width: 5px;
+}
+.glass-container .content::-webkit-scrollbar-thumb{
+    background-color: var(--btn-color);
+}

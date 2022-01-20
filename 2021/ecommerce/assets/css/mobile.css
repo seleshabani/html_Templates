@@ -1,0 +1,197 @@
+@media (max-width : 600px) {
+    .container {
+        width: 99%;
+        margin-top: 30px;
+    }
+    /* .banner {
+        display: none;
+    } */
+    /* .container-white-line{
+        
+    } */
+    .banner .banner-row-1 {
+        flex-direction: column;
+    }
+    .banner .banner-row-2 {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: max-content;
+    }
+    .banner .banner-row-2 .card{
+        /* display: none; */
+      width: 80%;
+    }
+    .menu {
+        display: none;
+    }
+    .mobile-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        margin-top: 10px;
+        background-color: var(--container-background-color);
+        border-radius: var(--border-raduis);
+        position: sticky;
+        top: 1em;
+        /* border: solid black; */
+    }
+    .mobilemenu-item-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* border: solid red; */
+    }
+    .mobilemenu-item-left-icone {
+        width: 30px;
+        height: 50px;
+        margin-right: 5px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        background-color: var(--circle-color);
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: var(--border-raduis);
+    }
+    .mobilemenu-item-left-icone i {
+        margin-bottom: 3px;
+    }
+
+    .mobilemenu-item-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        width: 130px;
+        margin-right: 10px;
+    }
+    .mobilemenu-item-right .menu-item-basket-price {
+        display: inline-block;
+        font-size: 12px ;
+        align-self: center;
+        position: relative;
+        left: 1vw;
+        width: 70px;
+    }
+    .mobilemenu-item-right .yellow-circle {
+        right: 5px;
+    }
+    .mobilemenu-item-right .menu-item-basket-price::after {
+        content: " fc";
+    }
+    .mobilemenu-item-right .menu-item-basket-price i{
+        font-size: 14px ;
+    }
+    .mobilemenu-title {
+        font-size: 15px;
+    }
+    .section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .section-aside {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .section-form {
+        width: 90%;
+    }
+    .mobilemenu-handler {
+        z-index: 4;
+        width: 300px;
+        margin-top: 20px;
+        position: fixed;
+        top: 50px;
+        left: 38px;
+        display: none;
+    }
+    .mobilemenu-handler-menu {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        background-color: var(--color-for-out-border);
+        
+    }
+    .mobilemenu-handler-menu-item {
+        cursor: pointer;
+        text-align: center;
+        /* margin-left: 10px;
+        margin-right: 10px; */
+        background-color: var(--circle-color);
+        height: 40px;
+        width:100%;
+        justify-content: center;
+        position: relative;
+        right: 20px;
+        padding-top:15px;
+    }
+    .widget-zone {
+        width: 90%;
+        height: 27px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        padding-left: 25px;
+        padding-top: 10px;
+    }
+    .widget-zone .form .form-item .form-item-input{
+        border: none;
+    }
+    .form-item-with-icone {
+        width: 200px;
+        padding-left: 10px;
+    }
+    /* .widget-zone .self-breadcrumb {
+        
+    } */
+    .section-itemCard-zone {
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .animate-menu {
+        animation: push-menu 300ms;
+    }
+    .animate-disabled-menu {
+        animation: push-disabled-menu 300ms;
+    }
+}
+
+@keyframes push-menu {
+    0%{
+        margin-left: -300px;
+    }
+    30%{
+        margin-left: -200px;
+    }
+    70%{
+        margin-left: -100px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+
+@keyframes push-disabled-menu {
+    0%{
+        margin-left: -100px;
+    }
+    50%{
+        margin-left: -200px;
+    }
+    100%{
+        margin-left: -300px;
+    }
+}

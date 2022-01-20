@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/scrollbar.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/panier.css">
+</head>
+<body>
+    
+    
+    <div  id="container">
+        <div  class="container-white-line">
+            <div id="top"></div>
+            <!-- header du site -->
+            <header  class="menu">
+                <div class="menu-item-left">
+                    <a href="#"><span class="circle icone-accueil"><i class="fa fas fa-home"></i></span></a>
+                    <a class="menu-item-left-text" href="#">E-commerce</a>
+                </div>
+                <div class="menu-item-center">
+                    <a href="index.html">Accueil</a>
+                    <a href="boutique.html">Boutique</a>
+                    <a href="apropos.html">A propos</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="menu-item-right">
+                    <span  class="menu-item-basket-price">300.000</span>
+                    <a class="menu-item-basket-nbr-item" href="">
+                        <span class="circle basket">
+                            <i  class="fa fa-shopping-basket"></i>
+                        </span>
+                    </a>
+                    <span class="yellow-circle"><span class="basket-nbr-item">4</span></span>
+
+                </div>
+            </header>
+
+            <!-- Menu ecran mobile -->
+            <div class="mobile-menu">
+                <div class="mobilemenu-item-left">
+                    <div data-menu-toggler class="mobilemenu-item-left-icone circle">
+                        <i class="fa fas fa-minus"></i>
+                        <i class="fa fas fa-minus"></i>
+                        <i class="fa fas fa-minus"></i>
+                    </div>
+                    <h1 class="mobilemenu-title"><a href="">E-commerce</a></h1>
+                </div>
+                <div class="mobilemenu-item-right">
+                    <span  class="menu-item-basket-price">300.000</span>
+                    <a class="menu-item-basket-nbr-item" href="">
+                        <span class="circle basket">
+                            <i  class="fa fa-shopping-basket"></i>
+                        </span>
+                    </a>
+                    <span class="yellow-circle"><span class="basket-nbr-item">4</span></span>
+                </div>
+            </div>
+            <div class="widget-zone">
+                <div class="self-breadcrumb breadcrumb">
+                    <a href="index.html" class="breadcrumb-item">Accueil</a>
+                    <a class="breadcrumb-item active" href="panier.html">Panier</a>
+                </div>
+                
+            </div>
+            <div class="section">
+                <div class="section-panier-items-zone">
+                    <table class="table">
+                        <thead class="table-title">
+                            <tr>
+                                <th>Article</th>
+                                <th>Prix</th>
+                                <th>Quantité</th>
+                                <th>Expiration</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-content">
+                            <tr class="table-content-item">
+                                <td>ii</td>
+                                <td>ii</td>
+                                <td>ii</td>
+                                <td>ii</td>
+                            </tr>
+                            <tr class="table-content-item">
+                                <td>ii</td>
+                                <td>ii</td>
+                                <td>ii</td>
+                                <td>ii</td>
+                            </tr>
+                            <tr class="table-content-item">
+                                <td>ii</td>
+                                <td>ii</td>
+                                <td>ii</td>
+                                <td>ii</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="form-item-input btn"><a href="">Valider le panier</a></button>
+                    <button class="form-item-input btn"><a href="">Effacer le panier</a></button>
+                </div>
+                <div class="section-ads-zone">
+
+                </div>
+            </div>
+
+            <div data-menu-handler class="mobilemenu-handler">
+                <ul class="mobilemenu-handler-menu">
+                    <li class="mobilemenu-handler-menu-item"><a href="index.html">Accueil</a></li>
+                    <li class="mobilemenu-handler-menu-item"><a href="boutique.html">Boutique</a></li>
+                    <li class="mobilemenu-handler-menu-item"><a href="apropos.html">A propos</a></li>
+                    <li class="mobilemenu-handler-menu-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <a href="#top" id="gotop"><i class="fa fas fa-arrow-up"></i></a>
+    <footer class="footer">
+        <div class="footer-text">
+            <span class="footer-text-name"><i class="fa far fa-copyright"></i> Sele Shabani | 2020</span>
+        </div>
+        <div class="footer-social">
+            <a href=""><i class="fa fab fa-github"></i></a>
+            <a href=""><i class="fa fab fa-facebook"></i></a>
+            <a href=""><i class="fa fab fa-google"></i></a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

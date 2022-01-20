@@ -1,0 +1,122 @@
+@media(max-width:900px){
+    main{
+        min-height: max-content;
+        width: 100%!important;
+    }
+    .glass-container{
+        width: 100%;
+        min-height: max-content;
+        border-radius: 0px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .glass-container .drawer-menu{
+        display: none;
+    }
+    .glass-container .aside{
+        display: none;
+    }
+    .glass-container .content{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        overflow: scroll;
+    }
+    .glass-container .content .stories{
+        width: 100%;
+        padding-left: 5px;
+        overflow: hidden;
+    }
+    /* .glass-container .content .stories .stories-item:last-child{
+        display: none;
+    } */
+    .content .stories .stories-item{
+        width: 70px;
+        height: 70px;
+        margin: 5px;
+    }
+    .content .stories .stories-item .stories-item-img{
+        width: 65px;
+        height: 65px;
+    }
+    .content .stories .stories-item.self .stories-item-img::after{
+        width: 65px;
+        height: 65px;
+        left: 0px;
+        top: 0px;
+    }
+    .content .stories .stories-item.self .stories-item-img .fa{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        z-index: 3;
+    }
+    .glass-container .content + hr{
+        display: none;
+    }
+    .glass-container .content .content-feeds{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        height: max-content;
+    }
+    .glass-container .content .content-feeds .content-feeds-item{
+        width: 100%;
+    }
+    .mobile-menu{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 50px;
+        z-index: 100;
+        background-color: white;
+        display: flex;
+    }
+    .mobile-menu .elts{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 15px;
+    }
+    .mobile-menu .elts a{
+        font-size: 1em;
+        color: var(--text-color);
+        transition: all 300ms;
+    }
+    .mobile-menu .elts a:hover{
+        color: var(--btn-color);
+    }
+    .mobile-profilBrand{
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        width: 100%;
+        height: 50px;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: white;
+    }
+    .mobile-profilBrand .profil{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+    .mobile-profilBrand .profil-name a{
+        color:var(--text-color);
+    }
+    .mobile-profilBrand .profil-search{
+        margin-left: 15%;
+    }
+    .content-feeds .content-feeds-item .feed-text .feed-text-user-info img{
+        height: 50px;
+        width: 50px;
+    }
+}

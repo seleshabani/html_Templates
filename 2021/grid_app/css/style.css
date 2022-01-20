@@ -1,0 +1,114 @@
+:root{
+    --primary:#ddd;
+    --dark:#333;
+    --light:#fff;
+    --shadow:0 1px 5px rgba(104,104,104,0.8);
+}
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+body{
+    background: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+.btn{
+    background: var(--dark);
+    padding: 0.6em;
+    color: var(--primary);
+    text-decoration: none;
+}
+.wrapper{
+    display: grid;
+    gap: 20px;
+}
+.main-nav ul{
+    display: grid;
+    gap: 20px;
+    list-style: none;
+    grid-template-columns: repeat(4,1fr);
+    padding: 0%;
+}
+.main-nav a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--dark);
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    padding: 0.8rem;
+    font-size: 1.1rem;
+}
+.main-nav a:hover{
+    background: var(--dark);
+    color: var(--light);
+}
+.top-container{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b';
+}
+.showcase{
+    grid-area: showcase;
+    min-height: 400px;
+    background: url(/img/sajad-nori-uRIil5LFBaI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: var(--light);
+}
+.top-box{
+    box-shadow: var(--shadow);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 1.5rem;
+}
+.top-box-a{
+    grid-area: top-box-a;
+}
+.top-box-b{
+    grid-area: top-box-b;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.boxes .box{
+    box-shadow: var(--shadow);
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    background: var(--primary);
+    box-shadow: var(--shadow);
+}
+.info img{
+    width: 100%;
+    height: auto;
+}
+.portfolio{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.portfolio img{
+    height: 300px;
+}

@@ -1,0 +1,23 @@
+.section {
+    width: 90%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-items: center;
+}
+.section-form {
+    width: 60%;
+}
+.section-aside {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: normal;
+}
+.section-aside-img img {
+    width: 100%;
+    height: 100%;
+}
