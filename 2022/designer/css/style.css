@@ -3,7 +3,7 @@
     --bgColorbtn: rgba(116, 116, 116, 0.986);
     --colorbtn: rgba(233, 230, 230, 0.836);
     --bgwhite: #fff;
-    --mainColorTheme: rgb(206, 6, 139);
+    --mainColorTheme: rgb(209, 19, 44);
     --colorText: #fff;
     --colorBtnBgd2: rgb(245, 209, 4);
 }
@@ -49,6 +49,11 @@ a {
 .btn-red {
     background-color: rgb(209, 19, 44);
     color: var(--colorText);
+}
+
+.btn.yellow {
+    background-color: var(--colorBtnBgd2);
+    color: var(--mainColorTheme);
 }
 
 body section,
@@ -112,10 +117,18 @@ header .section-content .nav li a {
 
 body section {
     height: 500px;
+    background-color: var(--bgwhite);
+    margin-bottom: 2rem;
 }
 
 .section-annonce.blue {
     background-color: rgb(34, 89, 172);
+    color: var(--colorText);
+    height: 150px;
+}
+
+.section-annonce.red {
+    background-color: var(--mainColorTheme);
     color: var(--colorText);
     height: 150px;
 }
@@ -141,10 +154,10 @@ body section {
 }
 
 .section-about-team {
-    background-color: var(--mainColorTheme);
-    color: var(--colorText);
     text-align: center;
     margin-bottom: 2rem;
+    background-color: var(--mainColorTheme);
+    color: var(--colorText);
 }
 
 .section-about-team .section-content {
@@ -281,4 +294,52 @@ body section {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: .5rem;
+}
+
+.section-blog {
+    align-items: baseline;
+}
+
+.section-blog .section-content {
+    padding-top: 2rem;
+}
+
+.section-blog .section-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section-blog .section-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-blog .section-content .items {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.section-blog .section-content .items .item {
+    width: 25%;
+    height: 200px;
+    border: solid 5px rgb(32, 190, 138);
+    position: relative;
+}
+
+.section-blog .section-content .items .item .label-cat {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 15px;
+    right: 5px;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    color: var(--colorText);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 71, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    cursor: pointer;
 }
