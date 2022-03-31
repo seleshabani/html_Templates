@@ -400,3 +400,14 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+
+/* desactivation */
+
+header .section-content .mobile_nav_title {
+    display: none;
+}
+
+header .section-content .mobile_menu_handler {
+    display: none;
+}

@@ -1,0 +1,31 @@
+@media(max-width:800px) {
+    header .section-content .logo {
+        width: 60px;
+        height: 60px;
+    }
+    header .section-content .nav {
+        display: none;
+    }
+    header .section-content .mobile_nav_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 75%;
+        /* border: solid red; */
+    }
+    header .section-content .mobile_nav_title a {
+        color: var(--mainColorTheme);
+        font-size: 1.3rem;
+    }
+    header .section-content .mobile_menu_handler {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 50px;
+        font-size: 2rem;
+        cursor: pointer;
+        color: var(--mainColorTheme);
+    }
+}
