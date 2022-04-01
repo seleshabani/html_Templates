@@ -151,7 +151,7 @@ body section {
 }
 
 .section-annonce .section-content .btn {
-    width: 10%;
+    width: 20vw;
 }
 
 .section-about-team {
@@ -169,18 +169,19 @@ body section {
 
 .section-about-team h1 {
     width: 60%;
-    font-size: 2rem;
+    font-size: 3vw;
     margin-bottom: 1rem;
 }
 
 .section-about-team p {
-    font-size: 1.3rem;
+    font-size: 2.5vw;
     margin-bottom: 2.5rem;
 }
 
 .section-about-team .btn {
     background-color: var(--colorBtnBgd2);
     color: var(--mainColorTheme);
+    width: 25vw;
 }
 
 .section-about-us {
@@ -200,7 +201,7 @@ body section {
 
 .section-about-us .section-content h1 {
     color: var(--mainColorTheme);
-    font-size: 3rem;
+    font-size: 5vw;
     font-weight: bolder
 }
 
@@ -232,7 +233,7 @@ body section {
 
 .section-realisations .section-content h1 {
     color: var(--mainColorTheme);
-    font-size: 3rem;
+    font-size: 5vw;
 }
 
 .section-realisations .section-content h1 span {
@@ -256,7 +257,7 @@ body section {
 .section-realisations .section-content .btn {
     position: absolute;
     right: 0px;
-    bottom: 150px;
+    bottom: 120px;
     background-color: var(--colorBtnBgd2);
     color: var(--mainColorTheme);
 }
@@ -284,16 +285,16 @@ body section {
 
 .section-command .section-content h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 5vw;
     text-transform: capitalize;
     margin-bottom: .5rem;
 }
 
 .section-command .section-content p {
-    width: 50%;
+    width: 100%;
     /* border: solid red; */
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 3.5vw;
     margin-bottom: .5rem;
 }
 
