@@ -1,0 +1,164 @@
+@media(max-width:875px){
+    section{
+        margin-bottom: 20px;
+        height: max-content;
+    }
+    nav{
+        height: 10vh;
+        background-color: var(--main-color);
+        /* margin-bottom: 50px; */
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+    nav .container{
+        width: 90%;
+        height: 100%;
+        /* padding: 10px; */
+        margin: auto;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+    }
+    nav .container .nav-items{
+        display: none;
+    }
+    nav .container .brand{
+        width: 70%;
+        height: 100%;
+        padding: 10px;
+        padding-left: 5px;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+
+    }
+    nav .container .brand .brand-logo{
+        width: 40px;
+        height: 40px;
+    }
+    nav .container .brand .brand-logo span{
+        font-size: 1em;
+    }
+    nav .container .brand .brand-text a{
+        font-size: 0.8em;
+        width: 80%;
+    }
+    nav .toggler{
+        width: 20%;
+        color: whitesmoke;
+        display: block;
+        cursor: pointer;
+        text-align: center;
+    }
+    nav .toggler i{
+        font-size: 25px;
+    }
+    .hero-title{
+        margin-top: 10vh;
+    }
+    main{
+        margin-top: 10vh;
+    }
+    main .about {
+        width: 70%;
+        height: max-content;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        margin-top: 10px;
+        margin-bottom: 150px;
+    }
+    main .about .about-img{
+        height: 200px;
+        width: 200px;
+        margin-bottom: 5px;
+    }
+    main .about .about-img img{
+        width: 100%;
+        height: 100%;
+    }
+    main .about .about-text{
+        width: 100%;
+        text-align: center;
+    }
+    main .about .about-text .about-myname h4{
+        font-size: 1.5em;
+    }
+    main .about .about-text .about-resume p{
+        text-align: justify;
+    }
+    main .about .about-action{
+        /* margin-top: 20px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+    main .about .about-action .btn{
+        height: 40px;
+        width: max-content;
+        padding: 15px;
+        margin-bottom: 5px;
+    }
+
+    .what-i-do .section-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .what-i-do .section-items .section-items-item{
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* justify-content: space-between; */
+        align-content: flex-start;
+    }
+    .what-i-do .section-items .section-items-item .item-icone{
+        margin-right: 10px;
+    }
+
+    .stats .section-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .stats .section-items .item{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* resume */
+    .educ-exp-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .educ-exp-container .ed-exp-column{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* contact */
+
+    .contact-infos{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .contact-infos > *{
+        flex: 1;
+    }
+}
